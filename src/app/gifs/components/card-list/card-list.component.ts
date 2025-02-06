@@ -1,4 +1,5 @@
-import { ChangeDetectionStrategy, Component, isStandalone } from '@angular/core';
+import { ChangeDetectionStrategy, Component, Input, isStandalone } from '@angular/core';
+import { Gif } from '../../interfaces/gifs.interfaces';
 
 @Component({
   selector: 'gifs-card-list',
@@ -6,4 +7,9 @@ import { ChangeDetectionStrategy, Component, isStandalone } from '@angular/core'
   templateUrl: './card-list.component.html',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class CardListComponent { }
+export class CardListComponent {
+  
+	@Input()
+	public gifs: Gif[] = [];
+	
+}
