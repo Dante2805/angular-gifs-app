@@ -5,8 +5,7 @@ import { Gif } from '../../interfaces/gifs.interfaces';
 @Component({
   selector: 'gifs-home-page',
   standalone: false,
-  templateUrl: './home-page.component.html',
-  changeDetection: ChangeDetectionStrategy.OnPush,
+  templateUrl: './home-page.component.html'
 })
 export class HomePageComponent {
 
